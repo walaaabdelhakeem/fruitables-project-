@@ -1,0 +1,478 @@
+:root {
+  --color-link: #81c408;
+  --color-link2: #ffb524;
+  --color-text: #45595b;
+  --font1: "Open Sans", sans-serif;
+  --font2: "Raleway";
+  --color-bg: #f4f6f8;
+}
+span,
+p {
+  color: var(--color-text);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font1);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#hup-section-for-contact-info .container {
+  background-color: var(--color-link);
+  font-size: 0.8rem;
+  border-top-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.contact-info i {
+  color: var(--color-link2);
+}
+.contact-info a,
+.breadcrumb-item a {
+  font-family: var(--font1);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.breadcrumb-item {
+  --bs-breadcrumb-divider-color: white;
+}
+.breadcrumb-item:hover a {
+  color: var(--color-link2);
+}
+/* navstyle */
+.navbar-collapse {
+  flex-grow: 0.5;
+}
+.navbar-brand {
+  color: var(--color-link);
+  font-family: var(--font2);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.nav-link:focus,
+.nav-link:hover,
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: var(--color-link);
+}
+
+.nav-item a:active {
+  color: var(--color-link);
+}
+.icon-form .search-btn {
+  border: 2px solid var(--color-link2);
+  border-radius: 50%;
+}
+.icon-form .search-btn:hover {
+  background-color: var(--color-link2);
+}
+.icon-form i {
+  color: var(--color-link);
+  font-size: 2rem;
+}
+.shopping:hover i {
+  color: #33602a;
+}
+.icon-form .search-btn i {
+  font-size: 1.4rem;
+}
+.badge {
+  background-color: var(--color-link2);
+}
+.fa-bars {
+  color: var(--color-link) !important;
+}
+.dropdown-item:hover {
+  color: var(--color-link);
+  background-color: var(--color-link2);
+}
+/*end navbar*/
+/* home*/
+.home {
+  background-image: url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.home-contant h1 {
+  color: var(--color-link);
+  font-size: 4rem;
+  font-family: var(--font2);
+  font-weight: 800;
+}
+.home-contant h4 {
+  font-weight: 600;
+  font-family: var(--font2);
+  color: var(--color-link2);
+  font-size: 1.5rem;
+}
+.home-contant form button {
+  background-color: var(--color-link);
+  right: 25%;
+}
+.home-contant form input,
+.home form button {
+  border: 2px solid var(--color-link2);
+  transition: all 500ms;
+  font-weight: 500;
+}
+form button:hover {
+  background-color: var(--color-link2);
+}
+.form-control:focus {
+  border-color: var(--color-link2);
+  box-shadow: 0 0 0 0.25rem rgba(129, 196, 8, 0.25);
+}
+.home .carousel-item {
+  background-color: var(--color-link2);
+}
+.home .carousel-caption span {
+  font-size: 1.5rem;
+  background-color: rgba(255, 181, 36, 0.7);
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.home .carousel-caption {
+  top: 50%;
+  left: 50%;
+  max-height: fit-content;
+  transform: translate(-50%, -50%);
+}
+.roundofbuttoncontrol {
+  background-color: var(--color-link);
+  width: 3rem;
+  height: 3rem;
+  background-size: 80% 80%;
+  border: 2px solid white;
+  padding: 5px;
+}
+/*servicse*/
+.circle-card {
+  background-color: var(--color-link2);
+  width: 120px;
+  height: 120px;
+  color: white;
+}
+.circle-card::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  rotate: 45deg;
+  bottom: -10%;
+  background-color: var(--color-link2);
+}
+.card-icon {
+  background-color: var(--color-bg);
+}
+.card-contant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
+}
+.card-contant h4 {
+  font-family: var(--font2);
+}
+/*nav-tap*/
+#nav-bar h2 {
+  color: var(--color-text);
+  font-weight: 600;
+  font-family: var(--font2);
+  font-size: 2.5rem;
+}
+#nav-bar .nav-pills .nav-link.active {
+  background-color: var(--color-link2);
+  color: white;
+}
+#nav-bar .nav-link {
+  border-radius: 20px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  width: 8rem;
+}
+.poptab {
+  width: 5rem;
+  background-color: var(--color-link2);
+  color: white;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+}
+.color-card {
+  border-color: var(--color-link2);
+  color: var(--color-text);
+}
+.color-card .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--font2);
+}
+.price {
+  font-size: 1.4rem;
+  font-family: var(--font1);
+  font-weight: 600;
+}
+.color-card a,
+.color-card-btn > a {
+  border: 1px solid var(--color-link2);
+  color: var(--color-link);
+  font-weight: 600;
+}
+.color-card a i,
+.color-card-btn i {
+  color: var(--color-link);
+}
+.color-card a:hover,
+.color-card-btn > a:hover {
+  background-color: var(--color-link2);
+  color: white;
+}
+.color-card,
+.color-card img,
+.color-card a,
+.color-card-btn > a {
+  transition: all 500ms;
+}
+.color-card img:hover {
+  transform: scale(1.3, 1.3);
+}
+/*offer*/
+#offer .card-color1 {
+  border-color: var(--color-link2);
+}
+#offer .card-color2 {
+  border-color: var(--color-text);
+}
+#offer .card-color3 {
+  border-color: var(--color-link);
+}
+.color-card:hover {
+  box-shadow: 0 0 55px rgba(0, 0, 0, 0.4);
+}
+.card-body-color {
+  background-color: var(--color-link2);
+}
+.card-body-color2 {
+  background-color: var(--color-text);
+}
+.card-body-color3 {
+  background-color: var(--color-link);
+}
+.card-title-color {
+  background-color: var(--color-link);
+}
+.card-title-color2 {
+  background-color: white;
+  color: var(--color-link);
+}
+.card-title-color3 {
+  background-color: var(--color-link2);
+}
+.center-div-offer {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.center-div-offer h5 {
+  font-family: var(--font2);
+  font-weight: 600;
+}
+.center-div-offer h3 {
+  font-family: var(--font2);
+  font-weight: 600;
+  color: var(--color-text);
+}
+/*Fresh Organic Vegetables*/
+#Fresh-Organic-Vegetables #Fresh-Organic-Vegetables .carousel-inner {
+  padding: 1em;
+}
+#Fresh-Organic-Vegetables .card {
+  margin: 0 0.5em;
+  border: 1px solid var(--color-link);
+}
+
+#Fresh-Organic-Vegetables .carousel-control-prev {
+  left: 98%;
+}
+#Fresh-Organic-Vegetables .carousel-control-prev,
+#Fresh-Organic-Vegetables .carousel-control-next {
+  opacity: 1;
+  width: 3em;
+  height: 1.5em;
+  color: var(--color-link);
+  border-radius: 20px;
+  border: 1px solid var(--color-link2);
+  top: -5%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  right: 30px;
+}
+.Vegetables {
+  width: 7rem;
+  background-color: var(--color-link);
+  color: white;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+}
+/*Fresh-Exotic-Fruits*/
+#Fresh-Exotic-Fruits {
+  background-color: var(--color-link2);
+  color: var(--color-text);
+}
+.Fresh-Exotic-Fruits-contant > h2 {
+  color: white;
+  font-family: var(--font2);
+  font-weight: 800;
+  font-size: 4rem;
+  margin-top: 2.8rem;
+}
+.Fresh-Exotic-Fruits-contant > h4 {
+  font-weight: 400;
+  font-family: var(--font);
+  color: var(--color-text);
+  font-size: 4rem;
+  padding-bottom: 10px;
+}
+.Fresh-Exotic-Fruits-contant button {
+  color: var(--color-text);
+  border: 1px solid white;
+  background-color: var(--color-link2);
+  transition: all 400ms;
+}
+.Fresh-Exotic-Fruits-contant button:hover {
+  background-color: var(--color-link);
+}
+.Fruits-contant {
+  background-color: white;
+}
+.Fruits-contant span {
+  font-family: var(--font2);
+  font-weight: 600;
+  line-height: 38.5px;
+  font-size: 2rem;
+  line-height: 28.8px;
+}
+.Fruits-contant h5 {
+  color: #6c757d;
+  font-family: var(--font2);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.Fruits-contant > h2 {
+  font-family: var(--font2);
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 7.5rem;
+}
+/*Bestseller-Products*/
+.Bestseller-Products-haed h2 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  font-family: var(--font2);
+  color: var(--color-text);
+}
+.color-card-btn h5 a,
+.color-card-btn h4 {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  font-weight: 600;
+  transition: all 400ms;
+  font-family: var(--font2);
+}
+.color-card-btn h5 a:hover {
+  color: var(--color-link);
+}
+.color-card-btn .dif-color {
+  color: var(--color-text);
+}
+/*users*/
+#users .container
+{
+  background-color: var(--color-bg);
+}
+.icon
+{
+  color: var(--color-link2);
+}
+.user-card
+{
+  background-color: #FFFFFF;
+}
+#users .card-contant h5
+{
+text-transform: uppercase;
+color: var(--color-link);
+font-weight: 600;
+font-family: var(--font2);
+font-size: 1.5rem;
+}
+#users .card-contant p
+{
+  color: var(--color-text);
+font-weight: 600;
+font-family: var(--font2);
+font-size: 2.5rem;
+}
+/*Our-Client-Saying*/
+#Our-Client-Saying h4
+{ 
+color: var(--color-link);
+}
+/*footer*/
+.text-primar
+{
+  color: var(--color-link);
+}
+.text-secondar
+{
+  color: var(--color-link2);
+}
+.home-contant button:hover
+{
+background-color: var(--color-link2);
+
+}
+.btn-outline-secondary 
+{
+  color: var(--color-link2) ;
+  border-color: var(--color-link2);
+  transition: all 500ms;
+}
+.btn-outline-secondary:hover
+{
+  color: black;
+  background-color: var(--color-link2);
+} 
+.zzzzz a ,.footer-item p
+{
+  text-decoration: none;
+  color: RGBA(255, 255, 255, 0.5);
+}
+.zzzzz a:hover,.footer-item a:hover
+{
+  color: var(--color-link2);
+}
+.footer
+{
+  color:RGBA(255, 255, 255, 0.5);
+  background-color: var(--color-text);
+}
+.footer-item a
+{
+  color: var(--color-link);
+  border: 1px solid var(--color-link2);
+}
